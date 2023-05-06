@@ -1,0 +1,347 @@
+*{
+	margin: 0px;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
+body{
+	background-color: #0e1118;
+	color: white;
+	height: 100%;
+}
+
+
+.toggle-theme-icon{
+	border: 0.2px solid white;
+	border-radius: 50%;
+	background-color: rgb(176,196,222);
+	width: 30px;
+	height: 30px;
+}
+
+.toggle-theme-icon:hover {
+	box-shadow: 0 0px 8px 8px #b0c4de70;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 60px;
+	background-color: black;
+	box-shadow: 0 8px 16px 0 #b0c4de32;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999; 
+}
+
+.nav-title{
+	padding-right: 100px;
+}
+
+
+.gradient-text {
+	/* background: linear-gradient(to right, lightsteelblue, #Cad1F5, lightsteelblue); */
+	background: linear-gradient(to right, lightsteelblue, #666666, lightsteelblue);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+
+
+.card-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-top: 100px;
+	align-items: baseline;
+}
+
+
+.card {
+	box-shadow: 0px 2px 2px 2px #b0c4de20;
+	transition: 0.3s;
+	border-radius: 1em;
+	width: 350px;
+	height: 400px;
+	margin: 30px;
+	background-color: black;
+	text-align: center;
+	overflow: hidden;
+
+}
+
+
+.card img{
+	width: 100%;
+	height: 57%;
+	border-radius: 1em;
+	transition: transform 0.3s ease-in-out;
+	margin-bottom: 7px;
+}
+
+
+.card:hover img {
+	transform: scale(1.05);
+}
+
+.card:hover .project-description{
+	color: white;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 #b0c4de32;
+}
+
+
+
+/* description style */
+.description-container {
+	padding: 1px 12px;
+
+}
+
+.project-title{
+	color: skyblue;
+	/* text-transform: uppercase; */
+}
+
+.project-title:hover{
+	color: dodgerblue ;
+}
+
+.project-description{
+	overflow: hidden;
+	color: lightsteelblue;
+	margin-top: 10px;
+	font-weight: 400;
+}
+
+
+
+/* open-text style */
+.open-project-container{
+	position: relative;
+	font-weight: 500;	
+}
+
+.open-project-text{
+	position: absolute;
+	bottom: 4%;
+	transform: translate(-50%, 200%);
+	color: darkturquoise ;
+}
+
+.open-project-text:hover{
+	background: linear-gradient(to right, #9400d3, #9400d3);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+
+footer {
+	background-color: black;
+	padding: 40px 0;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+	margin-top: 100px;
+	font-weight: 500;
+}
+
+.footer-container {
+	max-width: 100vw;
+	margin: 0 auto;
+}
+
+footer a{
+	color: white;
+}
+
+
+/* ------------------------------------------ */
+/* ---------------------------- */
+/*************************/
+/* for Light mode ****/
+/*****************/
+
+
+/* .forAll{
+	color: black;
+	} */
+
+	.bodyBg{
+		background-image: linear-gradient(to top left, gray,  lightsteelblue);
+	}
+
+	.lightsteelblue{
+		background-color: rgb(176,196,222);
+	}
+
+	
+
+	.proj-title-color{
+		
+		background: linear-gradient(to right, red, #0000cd);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+	}
+
+	.proj-title-color:hover{
+		
+		background: linear-gradient(to right, #0000cd, #0000cd);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+
+	.proj-d-color{
+		background: linear-gradient(to right, rgb(47,79,79), rgb(47,79,79));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.card:hover .proj-d-color{
+		background: linear-gradient(to right, black, black);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.open-p-color{
+		background: linear-gradient(to right, #483d8b, #483d8b);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.gradient{
+		background: linear-gradient(to right, black, #484b6a, black, black);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.gradient-black{
+		background: linear-gradient(to right, black, black);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+
+	.nav-shadow{
+		box-shadow: 0 8px 16px 0 #00000055;
+	}
+
+	.card-shadow{
+		box-shadow: 0 2px 2px 2px #00000055;
+	}
+
+	.card-shadow:hover{
+		box-shadow: 0 8px 16px 0 #00000090;
+	}
+
+	.black-text{
+		color: white;
+	}
+
+
+	@media only screen and (max-width: 850px) {
+		.card{
+			width: 320px;
+			height: 370px;
+		}
+
+		.nav-title{
+			padding-left: 20px
+		}
+
+		.project-description{
+			font-size: .9em;
+		}
+
+
+	}
+
+
+
+	@media only screen and (max-width: 780px) {
+		.card{
+			width: 300px;
+			height: 350px;
+		}
+
+		.nav-title{
+			padding-left: 20px
+		}
+
+
+		nav h2{
+			font-size: 1.3em;
+		}
+
+		.project-description{
+			font-size: .85em;
+		}
+
+	}
+
+
+	@media only screen and (max-width: 740px) {
+		.card{
+			width: 350px;
+			height: 400px;
+		}
+
+		.project-description{
+			font-size: 1em;
+		}
+
+	}
+
+
+	@media only screen and (max-width: 552px) {
+
+		.nav-title{
+			font-size: 1em;
+			padding-left: 50px;
+		}
+
+		nav h2{
+			font-size: 1em;
+		}
+
+
+	}
+
+
+	@media only screen and (max-width: 485px) {
+
+		.nav-title{
+			font-size: .8em;
+			padding: 0px;
+			padding-right: 20px;
+		}
+
+		nav h2{
+			font-size: .7em;
+		}
+
+
+	}
+
+
+/* 	@media only screen and (max-width: 440px) {
+
+		 
+
+	} */
+
+
+
+
+
+
+
